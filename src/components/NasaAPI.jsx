@@ -4,7 +4,6 @@ import NasaImages from './NasaImages'
 
 const NasaAPI = () => {
 	const [nasaData, setNasaData] = useState([])
-	const [nasaImage, setNasaImage] = useState("")
 	const [searchInput, setSearchInput] = useState("")
 	const [loading, setLoading] = useState(true)
 
@@ -29,7 +28,7 @@ const NasaAPI = () => {
 		<div>
 			<h2>Search NASA Images</h2>
 			<form onSubmit={handleSubmit}>
-				<input name="searchValue" type="text" value={searchInput} onChange={handleChange}></input>
+				<input name="searchValue" type="text" value={searchInput} onChange={handleChange} placeholder="search term"></input>
 				<button value="Submit">Submit</button>
 			</form>
 			<section>

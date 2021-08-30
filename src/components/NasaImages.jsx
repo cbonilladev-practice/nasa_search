@@ -1,4 +1,5 @@
 import React from 'react'
+import './NasaImages.scss'
 
 const NasaImages = ({ nasaData }) => {
 	console.log(nasaData)
@@ -6,23 +7,19 @@ const NasaImages = ({ nasaData }) => {
 	return (
 		<div>
 			<h2>This is a where the data go. 👇</h2>
+			<div className="images">
 			{
 				nasaData && nasaData.map((data, idx) => {
 					return (
-						<div key={idx}>
-							<p>{data.href}</p>
-							<div>
-								{data.links.map((data) => {
-									return <p>{data.href}</p>
-								})}
-								{/* {data.data.map((data) => {
-									return <p>{data.description}</p>
-								})} */}
-							</div>
+						<div key={idx} className="image">
+							{data.links?.map((data, i) => {
+								return <img src={data.href} alt="space" key={i} />
+							})}
 						</div>
 					)
 				})
 			}
+			</div>
 		</div>
 	)
 }
