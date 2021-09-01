@@ -28,7 +28,7 @@ const NasaAPI = () => {
 		<div>
 			<h2>Search NASA Images</h2>
 			<form onSubmit={handleSubmit}>
-				<input name="searchValue" type="text" value={searchInput} onChange={handleChange} placeholder="search term"></input>
+				<input autoComplete="off" name="searchValue" type="text" value={searchInput} onChange={handleChange} placeholder="search term"></input>
 				<button value="Submit">Submit</button>
 			</form>
 			<section>
