@@ -6,6 +6,7 @@ I want to improve on NASA's image search site, so I'm (trying) to create my own.
 
 # What I Learned
 
-* Fetching nested API's. 
-* Implementing search fields. 
+* Fetching API's with complex, nested JSON data. 
+* Implementing search fields.
+* API pagination.  
 

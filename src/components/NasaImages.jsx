@@ -9,7 +9,7 @@ const NasaImages = ({ nasaData, loading }) => {
 		console.log(currentNasaID)
 	}
 
-	console.log(nasaData[0].data[0].description)
+	// console.log(nasaData[0].data[0].description)
 
 	if (loading) {
 		return <p>...Loading</p>
