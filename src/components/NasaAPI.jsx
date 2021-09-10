@@ -13,6 +13,7 @@ const NasaAPI = () => {
 		.then(setLoading(true))
 		.then(response => response.json())
 		.then(data => setNasaData(data.collection.items))
+		// .then(loggedData => console.log(loggedData))
 		.finally(setLoading(false))
 	}
 
